@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Ruta para manejar la lista de películas
 @app.route('/peliculas', methods=['GET', 'POST'])
 def manejar_peliculas():
-    archivo_json = "Lista de Películas.json"
+    archivo_json = "peliculas_limpias.json"
 
     try:
         if request.method == 'GET':
